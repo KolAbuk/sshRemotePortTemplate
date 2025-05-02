@@ -18,9 +18,9 @@ import { env } from "process";
     dotenv.config();
     const ssh = new SshRemotePort({
       remoteHost: String(env.sshremotehost),
-      username: String(env.username),
-      password: String(env.password),
-      localForwardPort: Number(env.port),
+      username: String(env.sshusername),
+      password: String(env.sshpassword),
+      localForwardPort: Number(env.sshport),
     });
     await ssh.run({
       cbOnOpen: () => logger.info("tunnel opened"),
