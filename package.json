@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "@kolabuk/logger": "github:kolabuk/logger",
-    "@kolabuk/sshremoteport": "^1.1.1",
+    "@kolabuk/sshremoteport": "github:kolabuk/sshremoteport",
     "dotenv": "^16.5.0"
   }
 }
