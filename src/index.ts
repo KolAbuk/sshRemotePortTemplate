@@ -10,8 +10,6 @@ import { env } from "process";
 (async () => {
   const logger = new Logger({
     dirPath: "./data/logs",
-    debugMode: true,
-    useMilliseconds: true,
   });
   try {
     logger.success("INIT");
